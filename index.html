@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto de alura geek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ 
+    <nav>
+        <ul>
+            <li><a href="#productos">Disponibles</a></li>
+            <li><a href="#nuevoProductoForm">Agrega tus productos</a></li>
+             <!-- Agregar un id -->
+        </ul>
+            </nav>
+    <main>
+        <section class="productos-list" id="productos">
+            <h1>Productos Disponibles</h1>
+            <p id="no-productos">No hay productos por el momento</p>
+            <div class="productos-grid" id="productos-grid"></div>
+        </section>
+        <aside class="nuevo-producto">
+            <h2>Agregar Nuevos Productos </h2>
+            <form id="nuevoProductoForm">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required />
+                <input type="number" id="precio" placeholder="Precio" required />
+                <input type="text" id="imagenUrl" placeholder="URL de la imagen" required />
+                <button type="submit">Agregar Producto</button>
+                <button type="button" id="borrarCampos">Borrar</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <p>Desarollado por Fernando Gutierrez.</p>
+        <p> ¡Puedes encontrarme en insta!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/nafer_1208?igsh=NmRvM3E5czZrN2oz" target="_blank"><img src="./imagenes/insta.png" alt="Instagram"></a>
+            
+        </div>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
